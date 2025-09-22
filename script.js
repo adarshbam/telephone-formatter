@@ -1,7 +1,7 @@
 const phoneNumber = document.querySelector("#phone-number");
 let formatted = false;
 
-phoneNumber.addEventListener("keypress", (e) => {
+phoneNumber.addEventListener("keydown", (e) => {
   if (!/[0-9]/.test(e.key)) {
     e.preventDefault(); // block non-numeric keys
   }
