@@ -2,7 +2,7 @@ const phoneNumber = document.querySelector("#phone-number");
 let formatted = false;
 
 phoneNumber.addEventListener("keydown", (e) => {
-  if (!/[0-9]/.test(e.key)) {
+  if (!/[0-9]/.test(e.key) && !(e.key == "Backspace")) {
     e.preventDefault(); // block non-numeric keys
   }
 });
